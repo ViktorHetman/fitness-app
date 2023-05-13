@@ -1,6 +1,7 @@
 import React from "react";
 
 import Navbar from "@/components/Navbar";
+import Home from "@/components/Home";
 
 import { SelectedPage } from "@/models/types";
 
@@ -31,6 +32,7 @@ const App: React.FC = () => {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
+      <Home setSelectedPage={setSelectedPage} />
     </div>
   );
 };

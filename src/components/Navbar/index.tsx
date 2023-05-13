@@ -5,14 +5,8 @@ import Link from "./Link";
 import ActionButton from "../UI/ActionButton";
 
 import Logo from "@/assets/Logo.png";
-import { SelectedPage } from "@/models/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
-
-type NavbarProps = {
-  isTopOfPage: boolean;
-  selectedPage: SelectedPage;
-  setSelectedPage: (value: SelectedPage) => void;
-};
+import { NavbarProps } from "@/models/PropsTypes/NavbarProps";
 
 const Navbar: React.FC<NavbarProps> = ({
   isTopOfPage,
@@ -65,7 +59,9 @@ const Navbar: React.FC<NavbarProps> = ({
                   </Link>
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
+                  <p className="cursor-pointer transition duration-500 hover:text-primary-300">
+                    Sign In
+                  </p>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Become a member
                   </ActionButton>

@@ -2,13 +2,7 @@ import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import { SelectedPage } from "@/models/types";
-
-type LinkProps = {
-  children: string;
-  page: string;
-  selectedPage: SelectedPage;
-  setSelectedPage: (value: SelectedPage) => void;
-};
+import { LinkProps } from "@/models/PropsTypes/LinkProps";
 
 const Link: React.FC<LinkProps> = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase().replace(/ /g, " ") as SelectedPage;
