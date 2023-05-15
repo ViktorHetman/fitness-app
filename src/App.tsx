@@ -2,6 +2,7 @@ import React from "react";
 
 import Navbar from "@/components/Navbar";
 import Home from "@/components/Home";
+import Benefits from "@/components/Benefits";
 
 import { SelectedPage } from "@/models/types";
 
@@ -33,6 +34,7 @@ const App: React.FC = () => {
         setSelectedPage={setSelectedPage}
       />
       <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
     </div>
   );
 };
