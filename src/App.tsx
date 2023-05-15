@@ -5,6 +5,7 @@ import Home from "@/components/Home";
 import Benefits from "@/components/Benefits";
 import Classes from "./components/Classes";
 import ContacUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 
 import { SelectedPage } from "@/models/types";
 
@@ -39,6 +40,7 @@ const App: React.FC = () => {
       <Benefits setSelectedPage={setSelectedPage} />
       <Classes setSelectedPage={setSelectedPage} />
       <ContacUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 };
