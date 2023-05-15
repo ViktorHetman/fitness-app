@@ -1,5 +1,5 @@
 import { SelectedPage } from "../types";
 
-export type HomeProps = {
+export type PageProps = {
   setSelectedPage: (value: SelectedPage) => void;
 };

@@ -7,10 +7,10 @@ import {
 import { motion } from "framer-motion";
 
 import HText from "../UI/HText";
-import BenefitCard from "../UI/BenefitCard";
+import BenefitCard from "./BenefitCard";
 import ActionButton from "../UI/ActionButton";
 
-import { BenefitsProps } from "@/models/PropsTypes/BenefitsProps";
+import { PageProps } from "@/models/PropsTypes/PageProps";
 import { SelectedPage } from "@/models/types";
 import { BenefitType } from "@/models/types";
 import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
@@ -43,7 +43,7 @@ const container = {
   },
 };
 
-const Benefits: React.FC<BenefitsProps> = ({ setSelectedPage }) => {
+const Benefits: React.FC<PageProps> = ({ setSelectedPage }) => {
   return (
     <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div

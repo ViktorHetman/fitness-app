@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import ActionButton from "../UI/ActionButton";
 
-import { HomeProps } from "@/models/PropsTypes/HomeProps";
+import { PageProps } from "@/models/PropsTypes/PageProps";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import HomePageText from "@/assets/HomePageText.png";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
@@ -13,7 +13,7 @@ import SponsorFortune from "@/assets/SponsorFortune.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import { SelectedPage } from "@/models/types";
 
-const Home: React.FC<HomeProps> = ({ setSelectedPage }) => {
+const Home: React.FC<PageProps> = ({ setSelectedPage }) => {
   const aboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
