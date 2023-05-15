@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Home from "@/components/Home";
 import Benefits from "@/components/Benefits";
 import Classes from "./components/Classes";
+import ContacUs from "./components/ContactUs";
 
 import { SelectedPage } from "@/models/types";
 
@@ -37,6 +38,7 @@ const App: React.FC = () => {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <Classes setSelectedPage={setSelectedPage} />
+      <ContacUs setSelectedPage={setSelectedPage} />
     </div>
   );
 };

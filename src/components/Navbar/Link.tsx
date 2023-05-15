@@ -5,7 +5,7 @@ import { SelectedPage } from "@/models/types";
 import { LinkProps } from "@/models/PropsTypes/LinkProps";
 
 const Link: React.FC<LinkProps> = ({ page, selectedPage, setSelectedPage }) => {
-  const lowerCasePage = page.toLowerCase().replace(/ /g, " ") as SelectedPage;
+  const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
 
   return (
     <AnchorLink

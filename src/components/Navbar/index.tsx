@@ -33,30 +33,22 @@ const Navbar: React.FC<NavbarProps> = ({
                     page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  >
-                    Home
-                  </Link>
+                  />
                   <Link
                     page="Benefits"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  >
-                    Benefits
-                  </Link>
+                  />
                   <Link
                     page="Our Classes"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  >
-                    Our Classes
-                  </Link>
+                  />
                   <Link
-                    page="Contac Us"
+                    page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  >
-                    Contac Us
-                  </Link>
+                  />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
                   <p className="cursor-pointer transition duration-500 hover:text-primary-300">
@@ -112,7 +104,7 @@ const Navbar: React.FC<NavbarProps> = ({
               Our Classes
             </Link>
             <Link
-              page="Contac Us"
+              page="Contact Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             >
